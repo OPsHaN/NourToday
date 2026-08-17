@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نور نيوز | لوحة المتابعة الطبية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Marhey:wght@300..700&display=swap" rel="stylesheet">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8670933246814171"
+     crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ambient">
+  <svg viewBox="0 0 1600 400" preserveAspectRatio="none">
+    <path d="M0 200 H120 L140 60 L165 340 L190 200 H340 L360 130 L385 270 L410 200 H560 L580 20 L605 380 L630 200 H780 L800 150 L825 250 L850 200 H1000 L1020 60 L1045 340 L1070 200 H1220 L1240 130 L1265 270 L1290 200 H1440 L1460 20 L1485 380 L1510 200 H1600"/>
+  </svg>
+</div>
+
+<header>
+  <div class="header-row">
+    <div class="logo"><span class="dot"></span> نور نيوز</div>
+    <!-- <div class="monitor-readout">
+      <svg viewBox="0 0 70 22"><path id="miniEcg" d="M0 11 H24 L28 3 L32 19 L36 11 H70"/></svg>
+      <span class="bpm mono"><b id="bpmValue">72</b> BPM · مباشر</span>
+    </div> -->
+    <nav class="cats" id="catsNav">
+      <a href="#slider" data-cat="all" class="active">عاجل</a>
+      <a href="#" data-cat="research">أبحاث</a>
+      <a href="#" data-cat="nutrition">تغذية</a>
+      <a href="#" data-cat="prevention">وقاية</a>
+      <a href="#" data-cat="mental">صحة نفسية</a>
+    </nav>
+  </div>
+  <div class="header-divider"></div>
+</header>
+
+<div class="api-status" id="apiStatus">
+  الأخبار المعروضة الآن تجريبية — أضف مفتاح NewsData.io الخاص بك في الكود لعرض أخبار حقيقية ومتجددة يوميًا.
+  <a href="https://newsdata.io/register" target="_blank" rel="noopener">احصل على مفتاح مجاني</a>
+</div>
+
+<div class="slider" id="slider">
+  <div class="slider-frame" id="sliderFrame">
+    <div class="slides" id="slides"></div>
+    <button class="slider-arrow prev" id="prevBtn" aria-label="السابق">›</button>
+    <button class="slider-arrow next" id="nextBtn" aria-label="التالي">‹</button>
+    <div class="slider-dots" id="dots"></div>
+  </div>
+</div>
+
+<div class="ad-banner">
+  <ins class="adsbygoogle"
+       style="display:block; min-height:90px;"
+       data-ad-client="ca-pub-8670933246814171"
+       data-ad-slot="XXXXXXXXXX"
+       data-ad-format="horizontal"
+       data-full-width-responsive="true"></ins>
+</div>
+
+<div class="wrap">
+  <main class="content">
+
+    <section>
+      <div class="section-label" id="listLabel">سجل الأخبار</div>
+      <div class="log-list" id="logList"></div>
+    </section>
+
+    <aside>
+      <div class="rank-card">
+        <div class="section-label">الأكثر قراءة</div>
+        <div class="rank-list" id="rankList"></div>
+      </div>
+
+      <ins class="adsbygoogle"
+           style="display:block; width:300px; height:250px;"
+           data-ad-client="ca-pub-8670933246814171"
+           data-ad-slot="XXXXXXXXXX"
+           data-ad-format="rectangle"></ins>
+    </aside>
+
+  </main>
+</div>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose" aria-label="إغلاق">×</button>
+    <img class="modal-image" id="modalImage" src="" alt="">
+    <div class="modal-body">
+      <div class="modal-meta">
+        <span class="modal-cat" id="modalCat">صحة</span>
+        <span class="mono" id="modalTime">00:00</span>
+      </div>
+      <h2 id="modalTitle"></h2>
+      <div class="modal-text" id="modalText"></div>
+      <div class="modal-source">
+        <span class="modal-source-name" id="modalSource"></span>
+        <a class="modal-source-link" id="modalLink" href="#" target="_blank" rel="noopener">قراءة المصدر الأصلي ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © نور — لوحة متابعة الأخبار الطبية 
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
